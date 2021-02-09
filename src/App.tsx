@@ -1,8 +1,9 @@
 import React from 'react';
+import LandingPage from './containers/LandingPage'
 
 const App = () => (
     <div className="container">
-        <h1>Hello World, React!</h1>
+        <LandingPage />
     </div>
 )
 

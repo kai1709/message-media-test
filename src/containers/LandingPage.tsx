@@ -1,4 +1,6 @@
 import React from 'react'
+import './LandingPage.scss'
+import config from '../config'
 
 const LandingPage = () => {
   return (
