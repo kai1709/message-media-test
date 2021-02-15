@@ -17,7 +17,7 @@ module.exports = {
     resolve: {
         modules: [__dirname, 'src', 'node_modules'],
         extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
-      },
+    },
     module: {
         rules: [
             {
@@ -26,14 +26,11 @@ module.exports = {
                 loader: require.resolve('babel-loader')
             },
             {
-              test: /\.tsx?$/,
-              use: 'ts-loader',
-              exclude: /node_modules/
-          },
-            {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
-            }
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
+            { test: /\.scss$/i, use: ['style-loader', 'css-loader', 'sass-loader'] }
         ]
     }
 }
