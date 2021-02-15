@@ -7,7 +7,7 @@ import { Button, CircularProgress, Paper } from '@material-ui/core';
 import GifCard from '../components/GifCard';
 import GifFullscreenModal from '../components/GifFullscreenModal'
 
-interface LandingPageProps {
+export interface LandingPageProps {
   currentPage: number,
   totalCount: number,
   gifs: Array<Gif>,
@@ -17,11 +17,12 @@ interface LandingPageProps {
   selectedGifId: string | null
 }
 
-const LandingPage = (props: LandingPageProps) => {
+export const LandingPage = (props: LandingPageProps) => {
   const { isLoading, gifs, totalCount, currentPage, selectedGifId } = props
   const selectedGif = selectedGifId ? gifs.find(gif => gif.id === selectedGifId) : null;
-
+  console.log('mounted')
   useEffect(() => {
+    console.log('xxx')
     props.getGifs()
   }, [])
 
