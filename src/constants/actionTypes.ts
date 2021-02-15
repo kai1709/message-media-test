@@ -1,0 +1,3 @@
+export const GET_GIPHY_REQUEST = 'GET_GIPHY_REQUEST'
+export const GET_GIPHY_SUCCESS = 'GET_GIPHY_SUCCESS'
+export const SELECT_GIF = 'SELECT_GIF'

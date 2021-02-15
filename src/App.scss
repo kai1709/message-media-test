@@ -1,0 +1,19 @@
+html, body {
+  display: flex;
+  flex: 1;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex: 1;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
