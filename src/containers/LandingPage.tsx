@@ -20,9 +20,7 @@ export interface LandingPageProps {
 export const LandingPage = (props: LandingPageProps) => {
   const { isLoading, gifs, totalCount, currentPage, selectedGifId } = props
   const selectedGif = selectedGifId ? gifs.find(gif => gif.id === selectedGifId) : null;
-  console.log('mounted')
   useEffect(() => {
-    console.log('xxx')
     props.getGifs()
   }, [])
 
@@ -38,7 +36,7 @@ export const LandingPage = (props: LandingPageProps) => {
             <CircularProgress />
           </div>
         ) : (
-            <div>
+            <div className="gif-list-wrapper">
               <div className="list">
                 {
                   gifs.map(gif => (
@@ -53,7 +51,7 @@ export const LandingPage = (props: LandingPageProps) => {
                   <div className="load-more-wrapper">
                     {
                       !isLoading ?
-                        <Button variant="contained" onClick={() => props.getGifs()} color="primary">Load more</Button> : (
+                        <Button variant="contained" onClick={() => props.getGifs()} color="primary" id="load-more-button">Load more</Button> : (
                           <CircularProgress />
                         )
                     }

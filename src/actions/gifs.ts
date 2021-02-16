@@ -21,7 +21,7 @@ export const getGifs = () => async (dispatch: Dispatch, getState: Function) => {
   })
 }
 
-export const selectGif = (id: string) => (dispatch: Dispatch) => {
+export const selectGif = (id: string) => async (dispatch: Dispatch) => {
   dispatch({
     type: SELECT_GIF,
     payload: {

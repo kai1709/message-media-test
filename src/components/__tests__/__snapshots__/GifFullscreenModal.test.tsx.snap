@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifFullscreenModal should match snapshot 1`] = `
+<div
+  className="modal-wrapper"
+>
+  <div
+    className="close-button"
+    data-testid="close-button"
+    onClick={[MockFunction]}
+  >
+    <Memo(ForwardRef(CloseIcon)) />
+  </div>
+  <div
+    className="gif-fullscreen"
+    style={
+      Object {
+        "backgroundImage": "url('')",
+      }
+    }
+  />
+</div>
+`;

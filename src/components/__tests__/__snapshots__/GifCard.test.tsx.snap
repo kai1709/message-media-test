@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifCard should match snapshot 1`] = `
+<WithStyles(ForwardRef(Paper))
+  className="gif-card-container"
+  onClick={[Function]}
+>
+  <img
+    className="gif-card-thumbnail"
+    src=""
+  />
+  <div
+    className="gif-card-title"
+  />
+  <div
+    className="gif-card-author"
+  >
+    <div>
+      <div
+        className="gif-author-avatar-wrapper"
+      >
+        <img
+          className="gif-author-avatar"
+          src=""
+        />
+      </div>
+      <div
+        className="gif-author-name"
+      />
+    </div>
+  </div>
+</WithStyles(ForwardRef(Paper))>
+`;

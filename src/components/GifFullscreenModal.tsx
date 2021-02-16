@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import CloseIcon from '@material-ui/icons/Close';
 import './GifFullscreenModal.scss'
 
@@ -13,10 +12,10 @@ const GifFullscreenModal = (props: GifModalProps) => {
 
   return (
     <div className="modal-wrapper">
-      <div className="close-button" onClick={props.onClose}><CloseIcon /></div>
+      <div className="close-button" data-testid="close-button" onClick={props.onClose}><CloseIcon /></div>
       <div className="gif-fullscreen" style={{ backgroundImage: `url('${gif.images.original.url}')` }}></div>
     </div>
   )
 }
 
-export default connect()(GifFullscreenModal);
+export default GifFullscreenModal;

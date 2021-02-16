@@ -1,6 +1,6 @@
 import { GET_GIPHY_REQUEST, GET_GIPHY_SUCCESS, SELECT_GIF } from '../constants/actionTypes'
 
-const initialState: GifsState = {
+export const initialState: GifsState = {
   currentPage: 0,
   data: [],
   totalCount: 0,

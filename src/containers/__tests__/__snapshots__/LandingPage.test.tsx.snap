@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LandingPage renders 1`] = `ShallowWrapper {}`;
+exports[`LandingPage renders 1`] = `
+<WithStyles(ForwardRef(Container))
+  className="landing-page-container"
+>
+  <WithStyles(ForwardRef(Paper))
+    className="landing-page-paper"
+    elevation={4}
+  >
+    <div
+      className="loading-wrapper"
+    >
+      <WithStyles(ForwardRef(CircularProgress)) />
+    </div>
+  </WithStyles(ForwardRef(Paper))>
+</WithStyles(ForwardRef(Container))>
+`;
